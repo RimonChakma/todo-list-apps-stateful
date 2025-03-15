@@ -23,6 +23,13 @@ class ListScreen extends StatefulWidget {
 }
 
 class _ListScreenState extends State<ListScreen> {
+
+  List listItem =[];
+
+  addItem(){
+    listItem.add("iteam:${listItem.length +1}");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
